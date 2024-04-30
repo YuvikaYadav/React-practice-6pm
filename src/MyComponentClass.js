@@ -14,7 +14,7 @@ class MyComponentClass extends React.Component
     {
         super(props)
         console.log("Constructor of MyComponentClass")
-    }
+    }    
 
     static getDerivedStateFromProps()
     {
@@ -36,7 +36,7 @@ class MyComponentClass extends React.Component
     {
         console.log("ComponentDidUpdate")
     }
-    
+
     shouldComponentUpdate()
     {
         console.log("shouldComponentUpdate")
@@ -83,6 +83,11 @@ class MyComponentClass extends React.Component
     componentDidMount()
     {
         console.log("Component Did Mount")
+    }
+
+    componentWillUnmount()
+    {
+        console.log("componentWillUnmount")
     }
 }
 export default MyComponentClass
